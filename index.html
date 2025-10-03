@@ -27,27 +27,30 @@
   </head>
   <div class="modal is-open">
     <div class="modal-content">
-      <h2>Leave your contacts and we will call you back</h2>
+      <p class="form-title">Leave your contacts and we will call you back</p>
 
       <form action="" class="form">
         <div class="form-input">
-          <label for="name">
+          <label class="form-label" for="name">
             <span>Name</span>
-            <input class="input-size" type="text" name="name" id="name" />
+            <input class="input-form" type="text" name="name" id="name" />
+            <svg class="form-icon">
+              <use href="./images/symbol-defs.svg#icon-person"></use>
+            </svg>
           </label>
         </div>
 
         <div class="form-input">
           <label for="phone">
             <span>Phone</span>
-            <input class="input-size" type="tel" name="phone" id="phone" />
+            <input class="input-form" type="tel" name="phone" id="phone" />
           </label>
         </div>
 
         <div class="form-input">
           <label for="email">
             <span>Email</span>
-            <input class="input-size" type="email" name="email" id="email" />
+            <input class="input-form" type="email" name="email" id="email" />
           </label>
         </div>
 
@@ -59,7 +62,7 @@
               name="comment"
               id="comment"
               placeholder="Text input"
-              class="comment-input"
+              class="input-comment"
             />
           </label>
         </div>
