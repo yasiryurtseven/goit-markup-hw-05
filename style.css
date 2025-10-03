@@ -18,7 +18,53 @@ ul {
   width: 1440px;
   margin: 0 auto;
 }
+/* modal başlangıç */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.is-open {
+  display: flex;
+}
 
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  width: 400px;
+}
+.form-list {
+  display: flex;
+  flex-direction: column;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.form-input span {
+  display: flex;
+}
+.comment-input {
+  width: 360px;
+  height: 120px;
+}
+.input-size {
+  width: 360px;
+  height: 40px;
+}
+
+/* modal bitiş */
 .navigation-container {
   display: flex;
   justify-content: space-between;
