@@ -25,14 +25,24 @@
     />
     <title>Document</title>
   </head>
-  <div class="modal is-open">
+  <!-- is-open-->
+  <div class="modal">
     <div class="modal-content">
-      <p class="form-title">Leave your contacts and we will call you back</p>
+      <div class="modal-close-container">
+        <button class="modal-close">
+          <svg class="close-icon">
+            <use
+              href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+      </div>
 
+      <p class="form-title">Leave your contacts and we will call you back</p>
       <form action="" class="form">
         <div class="form-input">
           <label class="form-label" for="name">
-            <span>Name</span>
+            <span class="label-text">Name</span>
             <input class="input-form" type="text" name="name" id="name" />
             <svg class="form-icon">
               <use href="./images/symbol-defs.svg#icon-person"></use>
@@ -41,30 +51,56 @@
         </div>
 
         <div class="form-input">
-          <label for="phone">
-            <span>Phone</span>
+          <label for="phone" class="form-label">
+            <span class="label-text">Phone</span>
             <input class="input-form" type="tel" name="phone" id="phone" />
+            <svg class="form-icon">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
           </label>
         </div>
 
         <div class="form-input">
-          <label for="email">
-            <span>Email</span>
-            <input class="input-form" type="email" name="email" id="email" />
+          <label for="email" class="form-label">
+            <span class="label-text">Email</span>
+            <input
+              class="input-form"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <svg class="form-icon">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
           </label>
         </div>
 
         <div class="form-input">
           <label for="comment">
-            <span>Comment</span>
+            <span class="label-text">Comment</span>
             <input
+              class="input-comment"
               type="text"
               name="comment"
               id="comment"
               placeholder="Text input"
-              class="input-comment"
             />
           </label>
+        </div>
+
+        <div class="form-input">
+          <label for="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <span class="label-text"
+              >I accept the terms and conditions of the
+              <a href="#" class="privacy">Privacy Policy</a>
+            </span>
+          </label>
+        </div>
+
+        <div class="form-input-button">
+          <input class="form-submit" type="submit" value="Send" />
         </div>
       </form>
     </div>
@@ -481,6 +517,21 @@
                   </svg>
                 </a>
               </div>
+            </li>
+
+            <li class="footer-li-3">
+              <form action="" class="footer-form">
+                <label for="email">
+                  <span>Subscribe</span>
+                  <input type="email" placeholder="E-mail" name="email" />
+                  <button type="button">
+                    Subscribe
+                    <svg class="footer-icon-send">
+                      <use href="./images/symbol-defs.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </label>
+              </form>
             </li>
           </ul>
         </div>

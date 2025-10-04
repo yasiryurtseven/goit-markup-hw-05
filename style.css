@@ -42,9 +42,27 @@ ul {
   border-radius: 4px;
   width: 400px;
 }
+.modal-close-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 24px;
+}
+.modal-close {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+}
+.close-icon {
+  width: 8px;
+  height: 8px;
+  fill: #2e2f42;
+}
 
 .form-title {
-  padding: 72px 24px 16px 24px;
+  /* padding: 72px 24px 16px 24px; */
+  padding-bottom: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -52,7 +70,32 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.form-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+.form-icon {
+  position: absolute;
+  top: 65%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 24px;
+}
+.label-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.privacy {
+  color: #4d5ae5;
 }
 .form-list {
   display: flex;
@@ -63,29 +106,39 @@ ul {
   flex-direction: column;
   align-items: center;
   margin-bottom: 8px;
-  position: relative;
 }
-.input-form {
-  position: relative;
+.form-input-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-submit {
+  background: none;
+  color: #fff;
+  border: none;
 }
 
-.form-icon {
-  position: absolute;
-  top: 3px;
-  left: 16px;
-  width: 12px;
-  height: 12px;
-}
-.form-input span {
-  display: flex;
-}
 .input-comment {
   width: 360px;
   height: 120px;
 }
+input[type='text'] {
+  text-align: left;
+}
+input[type='text']::placeholder {
+  margin: 0;
+  padding-top: 5px;
+}
 .input-form {
   width: 360px;
   height: 40px;
+  padding-left: 36px;
 }
 
 /* modal bitiş */
@@ -441,6 +494,9 @@ button span {
   display: flex;
   flex-direction: row;
 }
+footer li {
+  list-style: none;
+}
 .footer-navigation {
   width: 264px;
 }
@@ -469,7 +525,6 @@ button span {
 .footer-social-icons {
   display: flex;
   justify-content: space-between;
-
   align-items: space-between;
   margin-left: 120px;
   width: 208px;
@@ -503,4 +558,39 @@ button span {
 .footer-icon {
   width: 16px;
   height: 16px;
+}
+.footer-li-3 span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  margin-left: 120px;
+  width: 208px;
+  height: 80px;
+}
+footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d5ae5;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+}
+.footer-icon-send {
+  width: 24px;
+  height: 24px;
 }
