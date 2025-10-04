@@ -79,13 +79,12 @@
         <div class="form-input">
           <label for="comment">
             <span class="label-text">Comment</span>
-            <input
+            <textarea
+              name=""
+              id=""
               class="input-comment"
-              type="text"
-              name="comment"
-              id="comment"
               placeholder="Text input"
-            />
+            ></textarea>
           </label>
         </div>
 
@@ -520,17 +519,36 @@
             </li>
 
             <li class="footer-li-3">
-              <form action="" class="footer-form">
+              <!-- <form action="" class="footer-form">
                 <label for="email">
                   <span>Subscribe</span>
                   <input type="email" placeholder="E-mail" name="email" />
-                  <button type="button">
-                    Subscribe
-                    <svg class="footer-icon-send">
-                      <use href="./images/symbol-defs.svg#icon-send"></use>
-                    </svg>
-                  </button>
                 </label>
+                <button class="footer-send-button" type="button">
+                  Subscribe
+                  <svg class="footer-icon-send">
+                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </form> -->
+              <form class="footer-form">
+                <label for="email" class="footer-label">
+                  <span>Subscribe</span>
+                  <input
+                    class="footer-email-input"
+                    id="email"
+                    type="email"
+                    placeholder="E-mail"
+                    name="email"
+                  />
+                </label>
+
+                <button class="footer-send-button" type="button">
+                  Subscribe
+                  <svg class="footer-icon-send">
+                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                </button>
               </form>
             </li>
           </ul>
